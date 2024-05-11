@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Juego de la Ruleta</title>
+  <link rel="stylesheet" href="css/estilo.css">
+  <link rel="icon" href="data:,">
+</head>
+
+<body>
+  <div class="stats">
+    <h1 id="points"></h1>
+    <h2 id="attemps"></h2>
+  </div>
+  <div id="premio">
+    <h1 class="title">Grammar Wheel</h1>
+    <div class="container">
+      <p class="elije"></p>
+      <!-- <div class="buttonDiv"></div> -->
+    </div>
+    <div id="answerContainer" class="container">
+      <p id="answer" class="elije"></p>
+      <!-- <div class="buttonDiv"></div> -->
+      <button class="button">Close</button>
+    </div>
+    <div id="final" class="container">
+      <p id="finalScore" class="elije"></p>
+      <button id="play" class="button">Play again</button>
+    </div>
+    <div class="vara"></div>
+    <div>
+      <img src="image/ruleta.png" id="ruleta">
+    </div>
+    <div>
+      <div id="sonido" style="display: none;">
+        <iframe src="sonido/ruleta.mp3" id="audio"></iframe>
+
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <script src="js/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+  <script src="js/script.js"></script>
+</body>
+
+</html>
