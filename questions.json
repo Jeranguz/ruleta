@@ -1,0 +1,91 @@
+{
+    "context_clues": [
+      {
+        "question": "context_clues1",
+        "answer": "hola",
+        "options": ["hola", "adios", "mundo", "respuesta"]
+      },
+      {
+        "question": "context_clues2",
+        "answer": "hola",
+        "options": ["hola", "adios", "mundo", "respuesta"]
+      },
+      {
+        "question": "context_clues3",
+        "answer": "hola",
+        "options": ["hola", "adios", "mundo", "respuesta"]
+      },
+      {
+        "question": "context_clues4",
+        "answer": "hola",
+        "options": ["hola", "adios", "mundo", "respuesta"]
+      }
+    ],
+    "type_clues": [
+      {
+        "question": "type_clues1",
+        "answer": "hola",
+        "options": ["hola", "adios", "mundo", "respuesta"]
+      },
+      {
+        "question": "type_clues2",
+        "answer": "hola",
+        "options": ["hola", "adios", "mundo", "respuesta"]
+      },
+      {
+        "question": "type_clues3",
+        "answer": "hola",
+        "options": ["hola", "adios", "mundo", "respuesta"]
+      },
+      {
+        "question": "type_clues4",
+        "answer": "hola",
+        "options": ["hola", "adios", "mundo", "respuesta"]
+      }
+    ],
+    "verb_tenses": [
+      {
+        "question": "verb_tenses1",
+        "answer": "hola",
+        "options": ["hola", "adios", "mundo", "respuesta"]
+      },
+      {
+        "question": "verb_tenses2",
+        "answer": "hola",
+        "options": ["hola", "adios", "mundo", "respuesta"]
+      },
+      {
+        "question": "verb_tenses3",
+        "answer": "hola",
+        "options": ["hola", "adios", "mundo", "respuesta"]
+      },
+      {
+        "question": "verb_tenses4",
+        "answer": "hola",
+        "options": ["hola", "adios", "mundo", "respuesta"]
+      }
+    ],
+    "cognates": [
+      {
+        "question": "cognates1",
+        "answer": "hola",
+        "options": ["hola", "adios", "mundo", "respuesta"]
+      },
+      {
+        "question": "cognates2",
+        "answer": "hola",
+        "options": ["hola", "adios", "mundo", "respuesta"]
+      },
+      {
+        "question": "cognates3",
+        "answer": "hola",
+        "options": ["hola", "adios", "mundo", "respuesta"]
+      },
+      {
+        "question": "cognates4",
+        "answer": "hola",
+        "options": ["hola", "adios", "mundo", "respuesta"]
+      }
+    ]
+  }
+  

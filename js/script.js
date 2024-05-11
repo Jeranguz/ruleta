@@ -6,90 +6,100 @@ const contenedorAnswer = document.getElementById('answerContainer');
 
 // const contenedor = document.querySelector('.buttonDiv');
 
-const context_clues = [{
-  question: 'context_clues1',
-  answer: 'hola',
-  options: ['hola', 'adios', 'mundo', 'respuesta'],
-},
-{
-  question: 'context_clues2',
-  answer: 'hola',
-  options: ['hola', 'adios', 'mundo', 'respuesta'],
-},
-{
-  question: 'context_clues3',
-  answer: 'hola',
-  options: ['hola', 'adios', 'mundo', 'respuesta'],
-},
-{
-  question: 'context_clues4',
-  answer: 'hola',
-  options: ['hola', 'adios', 'mundo', 'respuesta'],
-}
-];
+// const context_clues = [{
+//   question: 'context_clues1',
+//   answer: 'hola',
+//   options: ['hola', 'adios', 'mundo', 'respuesta'],
+// },
+// {
+//   question: 'context_clues2',
+//   answer: 'hola',
+//   options: ['hola', 'adios', 'mundo', 'respuesta'],
+// },
+// {
+//   question: 'context_clues3',
+//   answer: 'hola',
+//   options: ['hola', 'adios', 'mundo', 'respuesta'],
+// },
+// {
+//   question: 'context_clues4',
+//   answer: 'hola',
+//   options: ['hola', 'adios', 'mundo', 'respuesta'],
+// }
+// ];
 
-const type_clues = [{
-  question: 'type_clues1',
-  answer: 'hola',
-  options: ['hola', 'adios', 'mundo', 'respuesta'],
-},
-{
-  question: 'type_clues2',
-  answer: 'hola',
-  options: ['hola', 'adios', 'mundo', 'respuesta'],
-},
-{
-  question: 'type_clues3',
-  answer: 'hola',
-  options: ['hola', 'adios', 'mundo', 'respuesta'],
-},
-{
-  question: 'type_clues4',
-  answer: 'hola',
-  options: ['hola', 'adios', 'mundo', 'respuesta'],
-}];
+// const type_clues = [{
+//   question: 'type_clues1',
+//   answer: 'hola',
+//   options: ['hola', 'adios', 'mundo', 'respuesta'],
+// },
+// {
+//   question: 'type_clues2',
+//   answer: 'hola',
+//   options: ['hola', 'adios', 'mundo', 'respuesta'],
+// },
+// {
+//   question: 'type_clues3',
+//   answer: 'hola',
+//   options: ['hola', 'adios', 'mundo', 'respuesta'],
+// },
+// {
+//   question: 'type_clues4',
+//   answer: 'hola',
+//   options: ['hola', 'adios', 'mundo', 'respuesta'],
+// }];
 
-const verb_tenses = [{
-  question: 'verb_tenses1',
-  answer: 'hola',
-  options: ['hola', 'adios', 'mundo', 'respuesta'],
-},
-{
-  question: 'verb_tenses2',
-  answer: 'hola',
-  options: ['hola', 'adios', 'mundo', 'respuesta'],
-},
-{
-  question: 'verb_tenses3',
-  answer: 'hola',
-  options: ['hola', 'adios', 'mundo', 'respuesta'],
-},
-{
-  question: 'verb_tenses4',
-  answer: 'hola',
-  options: ['hola', 'adios', 'mundo', 'respuesta'],
-}];
+// const verb_tenses = [{
+//   question: 'verb_tenses1',
+//   answer: 'hola',
+//   options: ['hola', 'adios', 'mundo', 'respuesta'],
+// },
+// {
+//   question: 'verb_tenses2',
+//   answer: 'hola',
+//   options: ['hola', 'adios', 'mundo', 'respuesta'],
+// },
+// {
+//   question: 'verb_tenses3',
+//   answer: 'hola',
+//   options: ['hola', 'adios', 'mundo', 'respuesta'],
+// },
+// {
+//   question: 'verb_tenses4',
+//   answer: 'hola',
+//   options: ['hola', 'adios', 'mundo', 'respuesta'],
+// }];
 
-const cognates = [{
-  question: 'cognates1',
-  answer: 'hola',
-  options: ['hola', 'adios', 'mundo', 'respuesta'],
-},
-{
-  question: 'cognates2',
-  answer: 'hola',
-  options: ['hola', 'adios', 'mundo', 'respuesta'],
-},
-{
-  question: 'cognates3',
-  answer: 'hola',
-  options: ['hola', 'adios', 'mundo', 'respuesta'],
-},
-{
-  question: 'cognates4',
-  answer: 'hola',
-  options: ['hola', 'adios', 'mundo', 'respuesta'],
-}];
+// const cognates = [{
+//   question: 'cognates1',
+//   answer: 'hola',
+//   options: ['hola', 'adios', 'mundo', 'respuesta'],
+// },
+// {
+//   question: 'cognates2',
+//   answer: 'hola',
+//   options: ['hola', 'adios', 'mundo', 'respuesta'],
+// },
+// {
+//   question: 'cognates3',
+//   answer: 'hola',
+//   options: ['hola', 'adios', 'mundo', 'respuesta'],
+// },
+// {
+//   question: 'cognates4',
+//   answer: 'hola',
+//   options: ['hola', 'adios', 'mundo', 'respuesta'],
+// }];
+let fullData
+fetch('../questions.json')
+.then(function (data) {
+  return data.json();
+})
+.then(function(data){
+  fullData = data;
+  console.log(fullData);
+})
+console.log(fullData);
 
 let acierto = 0
 let intentos = 2
@@ -200,16 +210,16 @@ function girar() {
     let question = '';
     let color = '';
     if (topic == 'cognates') {
-      question = cognates[Math.floor(Math.random() * cognates.length)];
+      question = fullData.cognates[Math.floor(Math.random() * fullData.cognates.length)];
       color = "#11602C";
     } else if (topic == 'verb') {
-      question = verb_tenses[Math.floor(Math.random() * verb_tenses.length)];
+      question = fullData.verb_tenses[Math.floor(Math.random() * fullData.verb_tenses.length)];
       color = '#A0720C';
     } else if (topic == 'type') {
-      question = type_clues[Math.floor(Math.random() * type_clues.length)];
+      question = fullData.type_clues[Math.floor(Math.random() * fullData.type_clues.length)];
       color = '#143A62';
     } else if (topic == 'context') {
-      question = context_clues[Math.floor(Math.random() * context_clues.length)];
+      question = fullData.context_clues[Math.floor(Math.random() * fullData.context_clues.length)];
       color = '#821338';
     }
     document.querySelector('.elije').innerHTML = question.question;
