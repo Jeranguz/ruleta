@@ -88,6 +88,8 @@ img {
     height: 20rem;
     z-index: 1000;
     transition: display 0.5s ease;
+    border: 5px solid #691819;
+    
 }
 
 .mostrar {
@@ -110,6 +112,7 @@ img {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 2fr));
     gap: 2rem;
+    
 }
 
 .button {
@@ -133,6 +136,10 @@ img {
 }
 
 .btn-play-exit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50vw;
     border: solid;
     border-width: 1rem;
     border-radius: 2rem;
@@ -140,16 +147,24 @@ img {
     background-color: #e9555d;
     color: white;
     font-size: 5rem;
-    padding: 2rem 4rem;
+    margin: auto;
 }
 
 .container-btn-play-exit {
 
     display: flex;
     justify-content: center;
-    column-gap: 10rem;
 }
 
 .brain-img {
     width: 50rem;
+}
+
+.brain-icon{
+    position: absolute;
+    width: 7rem;
+    height: 7rem;
+    margin: 1rem;
+    top:0;
+    right: 0;
 }

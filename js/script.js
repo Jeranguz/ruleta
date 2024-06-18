@@ -102,7 +102,7 @@ fetch('../questions.json')
 console.log(fullData);
 
 let acierto = 0
-let intentos = 2
+let intentos = 5
 document.getElementById('attemps').innerHTML = "Remaining attempts: " + intentos;
 document.getElementById('points').innerHTML = "Score: " + acierto;
 
@@ -173,6 +173,14 @@ function girar() {
     // }
     document.getElementById('answer').innerHTML = answer;
     contenedorAnswer.classList.add('mostrar');
+    const imgAns = document.createElement('img');
+    imgAns.classList.add('brain-icon');
+    if (answer == 'Incorrect') {
+      imgAns.src = 'image/fail.svg';
+    }else{
+      imgAns.src = 'image/win.svg';
+    }
+    document.getElementById('answer').appendChild(imgAns);
     
   }
 
@@ -223,6 +231,10 @@ function girar() {
       color = '#821338';
     }
     document.querySelector('.elije').innerHTML = question.question;
+    const img = document.createElement('img');
+    img.src = 'image/' + topic + '.svg';
+    img.classList.add('brain-icon');
+    document.querySelector('.elije').appendChild(img);
     contenedorPadre.classList.add('mostrar');
     console.log(question.options);
     createButton(question, color);
