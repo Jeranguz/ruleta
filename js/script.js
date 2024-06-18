@@ -36,7 +36,7 @@ button.addEventListener('click', () => {
 });
 //reinicia el juego
 document.getElementById('play').addEventListener('click', () => {
-  intentos = 2;
+  intentos = 5;
   acierto = 0;
   document.getElementById('final').classList.remove('mostrar');
   document.getElementById('attemps').innerHTML = "Remaining attempts: " + intentos;
