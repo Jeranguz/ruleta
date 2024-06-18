@@ -6,90 +6,6 @@ const contenedorAnswer = document.getElementById('answerContainer');
 
 // const contenedor = document.querySelector('.buttonDiv');
 
-// const context_clues = [{
-//   question: 'context_clues1',
-//   answer: 'hola',
-//   options: ['hola', 'adios', 'mundo', 'respuesta'],
-// },
-// {
-//   question: 'context_clues2',
-//   answer: 'hola',
-//   options: ['hola', 'adios', 'mundo', 'respuesta'],
-// },
-// {
-//   question: 'context_clues3',
-//   answer: 'hola',
-//   options: ['hola', 'adios', 'mundo', 'respuesta'],
-// },
-// {
-//   question: 'context_clues4',
-//   answer: 'hola',
-//   options: ['hola', 'adios', 'mundo', 'respuesta'],
-// }
-// ];
-
-// const type_clues = [{
-//   question: 'type_clues1',
-//   answer: 'hola',
-//   options: ['hola', 'adios', 'mundo', 'respuesta'],
-// },
-// {
-//   question: 'type_clues2',
-//   answer: 'hola',
-//   options: ['hola', 'adios', 'mundo', 'respuesta'],
-// },
-// {
-//   question: 'type_clues3',
-//   answer: 'hola',
-//   options: ['hola', 'adios', 'mundo', 'respuesta'],
-// },
-// {
-//   question: 'type_clues4',
-//   answer: 'hola',
-//   options: ['hola', 'adios', 'mundo', 'respuesta'],
-// }];
-
-// const verb_tenses = [{
-//   question: 'verb_tenses1',
-//   answer: 'hola',
-//   options: ['hola', 'adios', 'mundo', 'respuesta'],
-// },
-// {
-//   question: 'verb_tenses2',
-//   answer: 'hola',
-//   options: ['hola', 'adios', 'mundo', 'respuesta'],
-// },
-// {
-//   question: 'verb_tenses3',
-//   answer: 'hola',
-//   options: ['hola', 'adios', 'mundo', 'respuesta'],
-// },
-// {
-//   question: 'verb_tenses4',
-//   answer: 'hola',
-//   options: ['hola', 'adios', 'mundo', 'respuesta'],
-// }];
-
-// const cognates = [{
-//   question: 'cognates1',
-//   answer: 'hola',
-//   options: ['hola', 'adios', 'mundo', 'respuesta'],
-// },
-// {
-//   question: 'cognates2',
-//   answer: 'hola',
-//   options: ['hola', 'adios', 'mundo', 'respuesta'],
-// },
-// {
-//   question: 'cognates3',
-//   answer: 'hola',
-//   options: ['hola', 'adios', 'mundo', 'respuesta'],
-// },
-// {
-//   question: 'cognates4',
-//   answer: 'hola',
-//   options: ['hola', 'adios', 'mundo', 'respuesta'],
-// }];
 let fullData
 fetch('../questions.json')
 .then(function (data) {
@@ -161,21 +77,12 @@ function girar() {
     // })
     
   function createAnswer(answer, correctAnswer) {
-    // if (answer == 'Incorrect'){
-    //   let paragraph = document.createElement('p');
-    //   paragraph.innerHTML = 'The correct answer was ' + correctAnswer
-    //   paragraph.classList.add('elije');
-    //   contenedorAnswer.appendChild(paragraph)
-    //   document.getElementById('answer').innerHTML = answer;
-    //   contenedorAnswer.classList.add('mostrar');
-    // }else{
-      
-    // }
     document.getElementById('answer').innerHTML = answer;
     contenedorAnswer.classList.add('mostrar');
     const imgAns = document.createElement('img');
     imgAns.classList.add('brain-icon');
     if (answer == 'Incorrect') {
+      document.getElementById('answer').innerHTML += "</br>" + correctAnswer;
       imgAns.src = 'image/fail.svg';
     }else{
       imgAns.src = 'image/win.svg';

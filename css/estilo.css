@@ -42,13 +42,13 @@ body {
         height: 0;
         border-left: 7.5px solid transparent; /* half of the desired width */
         border-right: 7.5px solid transparent; /* half of the desired width */
-        border-top: 70px solid #FFFF; /* height of the triangle */
+        border-top: 70px solid #93348B; /* height of the triangle */
         position: relative;
         top: 55px;
         left: 50%;
         transform: translate(-50%, -50%);
         z-index: 1000;
-    
+        
 
 
 }
