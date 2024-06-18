@@ -1,4 +1,4 @@
-* {
+* * {
     margin: 0px;
     text-align: center;
 }
@@ -79,7 +79,7 @@ img {
     justify-content: center;
     align-items: center;
     position: absolute;
-    top: 30%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: white;
@@ -166,5 +166,5 @@ img {
     height: 7rem;
     margin: 1rem;
     top:0;
-    right: 0;
+    right: -150px;
 }

@@ -1,91 +1,260 @@
 {
-    "context_clues": [
-      {
-        "question": "context_clues1",
-        "answer": "hola",
-        "options": ["hola", "adios", "mundo", "respuesta"]
-      },
-      {
-        "question": "context_clues2",
-        "answer": "hola",
-        "options": ["hola", "adios", "mundo", "respuesta"]
-      },
-      {
-        "question": "context_clues3",
-        "answer": "hola",
-        "options": ["hola", "adios", "mundo", "respuesta"]
-      },
-      {
-        "question": "context_clues4",
-        "answer": "hola",
-        "options": ["hola", "adios", "mundo", "respuesta"]
-      }
-    ],
-    "type_clues": [
-      {
-        "question": "type_clues1",
-        "answer": "hola",
-        "options": ["hola", "adios", "mundo", "respuesta"]
-      },
-      {
-        "question": "type_clues2",
-        "answer": "hola",
-        "options": ["hola", "adios", "mundo", "respuesta"]
-      },
-      {
-        "question": "type_clues3",
-        "answer": "hola",
-        "options": ["hola", "adios", "mundo", "respuesta"]
-      },
-      {
-        "question": "type_clues4",
-        "answer": "hola",
-        "options": ["hola", "adios", "mundo", "respuesta"]
-      }
-    ],
-    "verb_tenses": [
-      {
-        "question": "verb_tenses1",
-        "answer": "hola",
-        "options": ["hola", "adios", "mundo", "respuesta"]
-      },
-      {
-        "question": "verb_tenses2",
-        "answer": "hola",
-        "options": ["hola", "adios", "mundo", "respuesta"]
-      },
-      {
-        "question": "verb_tenses3",
-        "answer": "hola",
-        "options": ["hola", "adios", "mundo", "respuesta"]
-      },
-      {
-        "question": "verb_tenses4",
-        "answer": "hola",
-        "options": ["hola", "adios", "mundo", "respuesta"]
-      }
-    ],
-    "cognates": [
-      {
-        "question": "cognates1",
-        "answer": "hola",
-        "options": ["hola", "adios", "mundo", "respuesta"]
-      },
-      {
-        "question": "cognates2",
-        "answer": "hola",
-        "options": ["hola", "adios", "mundo", "respuesta"]
-      },
-      {
-        "question": "cognates3",
-        "answer": "hola",
-        "options": ["hola", "adios", "mundo", "respuesta"]
-      },
-      {
-        "question": "cognates4",
-        "answer": "hola",
-        "options": ["hola", "adios", "mundo", "respuesta"]
-      }
-    ]
-  }
-  
+  "context_clues": [
+    {
+      "question": "The sentence The arid climate makes it difficult for plants to grow suggests arid means:",
+      "answer": "b) Dry",
+      "options": [
+        "a) Wet",
+        "b) Dry",
+        "c) Cold",
+        "d) Humid"
+      ]
+    },
+    {
+      "question": "If someone is elated about their test score, they are likely:",
+      "answer": "c) Happy",
+      "options": [
+        "a) Sad",
+        "b) Angry",
+        "c) Happy",
+        "d) Tired"
+      ]
+    },
+    {
+      "question": "The word inevitable in the sentence The changes were inevitable due to the circumstances means:",
+      "answer": "a) Unavoidable",
+      "options": [
+        "a) Unavoidable",
+        "b) Surprising",
+        "c) Pleasant",
+        "d) Preventable"
+      ]
+    },
+    {
+      "question": "In the phrase, His explanation was lucid and easy to understand, lucid means:",
+      "answer": "b) Clear",
+      "options": [
+        "a) Confusing",
+        "b) Clear",
+        "c) Long",
+        "d) Boring"
+      ]
+    },
+    {
+      "question": "The sentence The austere room had no decorations or furniture suggests austere means:",
+      "answer": "b) Simple",
+      "options": [
+        "a) Luxurious",
+        "b) Simple",
+        "c) Colorful",
+        "d) Comfortable"
+      ]
+    },
+    {
+      "question": "In the sentence The gregarious child made friends quickly at the new school indicates gregarious means:",
+      "answer": "b) Sociable",
+      "options": [
+        "a) Shy",
+        "b) Sociable",
+        "c) Rude",
+        "d) Quiet"
+      ]
+    }
+  ],
+  "type_clues": [
+    {
+      "question": "What is the function of the hyphen in re-sign?",
+      "answer": "c) To join words into a single concept",
+      "options": [
+        "a) To indicate a pause",
+        "b) To separate items in a list",
+        "c) To join words into a single concept",
+        "d) To end a sentence"
+      ]
+    },
+    {
+      "question": "What is the function of the parentheses in the text?",
+      "answer": "b) To provide additional information",
+      "options": [
+        "a) To indicate a quotation",
+        "b) To provide additional information",
+        "c) To join words into a single concept",
+        "d) To separate items in a list"
+      ]
+    },
+    {
+      "question": "In this sentence: He had three choices: stay, leave, or fight. What is the function of the colon?",
+      "answer": "c) To introduce a list",
+      "options": [
+        "a) To indicate a quotation",
+        "b) To join two independent clauses",
+        "c) To introduce a list",
+        "d) To show possession"
+      ]
+    },
+    {
+      "question": "In the sentence: She loves reading; it expands her mind. What is the function of the Semicolon?",
+      "answer": "d) To join two related independent clauses",
+      "options": [
+        "a) To separate items in a complex list",
+        "b) To introduce a quotation",
+        "c) To show possession",
+        "d) To join two related independent clauses"
+      ]
+    },
+    {
+      "question": "In the sentence The result was unexpected—completely out of the blue. What is the function of the em dash?",
+      "answer": "c) To add emphasis or additional information",
+      "options": [
+        "a) To separate items in a list",
+        "b) To join words into a single concept",
+        "c) To add emphasis or additional information",
+        "d) To indicate possession"
+      ]
+    },
+    {
+      "question": "In the sentence: He was thinking... but couldn't decide. What is the function of the ellipsis?",
+      "answer": "b) To show an omission or pause",
+      "options": [
+        "a) To indicate possession",
+        "b) To show an omission or pause",
+        "c) To join words into a single concept",
+        "d) To separate items in a list"
+      ]
+    }
+  ],
+  "verb_tenses": [
+    {
+      "question": "She _ when the phone rang. (Past Continuous)",
+      "answer": "c) Was working",
+      "options": [
+        "a) Work",
+        "b) Were Working",
+        "c) Was working",
+        "d) Worked"
+      ]
+    },
+    {
+      "question": "They _ dinner when I arrived. (Past Continuous)",
+      "answer": "c) Were eating",
+      "options": [
+        "a) Eat",
+        "b) Eats",
+        "c) Were eating",
+        "d)Was Eating"
+      ]
+    },
+    {
+      "question": "She _ to the gym every morning. (Simple Present)",
+      "answer": "b) Goes",
+      "options": [
+        "a) Go",
+        "b) Goes",
+        "c) Going",
+        "d) Went"
+      ]
+    },
+    {
+      "question": "They _ the movie last night. (Simple Past)",
+      "answer": "c) Watched",
+      "options": [
+        "a) Watch",
+        "b) Watches",
+        "c) Watched",
+        "d) Watching"
+      ]
+    },
+    {
+      "question": "He _ his exam next week. (Future Tense)",
+      "answer": "c) Will take",
+      "options": [
+        "a) Take",
+        "b) Takes",
+        "c) Will take",
+        "d) Took"
+      ]
+    },
+    {
+      "question": "We _ a vacation in July. (Future Tense)",
+      "answer": "c) Will plan",
+      "options": [
+        "a) Plan",
+        "b) Plans",
+        "c) Will plan",
+        "d) Planned"
+      ]
+    },
+    {
+      "question": "She _ her homework already. (Present Perfect)",
+      "answer": "d) Has finished",
+      "options": [
+        "a) Finish",
+        "b) Finished",
+        "c) Finishing",
+        "d) Has finished"
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "question": "What does the Spanish word sensible mean in English?",
+      "answer": "b) Sensitive",
+      "options": [
+        "a) Sensible",
+        "b) Sensitive",
+        "c) Sensational",
+        "d) Sensory"
+      ]
+    },
+    {
+      "question": "The Spanish word actual translates to English as:",
+      "answer": "b) Current",
+      "options": [
+        "a) Actual",
+        "b) Current",
+        "c) Real",
+        "d) Exact"
+      ]
+    },
+    {
+      "question": "What is the term for embarazada in English?",
+      "answer": "b) Pregnant",
+      "options": [
+        "a) Embarrassed",
+        "b) Pregnant",
+        "c) Excited",
+        "d) Emotional"
+      ]
+    },
+    {
+      "question": "The Spanish word asistir in English is:",
+      "answer": "b) Attend",
+      "options": [
+        "a) Assist",
+        "b) Attend",
+        "c) Insist",
+        "d) Resist"
+      ]
+    },
+    {
+      "question": "What is the term for librería in English?",
+      "answer": "b) Bookstore",
+      "options": [
+        "a) Library",
+        "b) Bookstore",
+        "c) Liberty",
+        "d) Literature"
+      ]
+    },
+    {
+      "question": "The Spanish word fábrica translates to English as:",
+      "answer": "b) Factory",
+      "options": [
+        "a) Fabric",
+        "b) Factory",
+        "c) Fabricate",
+        "d) Fiction"
+      ]
+    }
+  ]
+}
