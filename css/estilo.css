@@ -168,3 +168,20 @@ img {
     top:0;
     right: -150px;
 }
+
+@media screen and (max-width: 720px) {
+    img{
+        width: 80%;
+    }
+    .stats{
+        position: inherit;
+    }
+
+    .container{
+        width: 100%;
+        gap: 0;
+    }
+    .brain-icon{
+        display: none;
+    }
+}
