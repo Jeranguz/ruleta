@@ -184,4 +184,10 @@ img {
     .brain-icon{
         display: none;
     }
+    .imagenchao{
+        display: none;
+    }
+    .brain-img{
+        width: 100%;
+    }
 }
